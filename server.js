@@ -1,6 +1,6 @@
 const express=require("express");
-const html=require("./routes/html")
-const api=require("./routes/api")
+const html=require("./routes/html");
+const api=require("./routes/api");
 
 //express server setup
 const app=express();

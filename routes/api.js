@@ -1,6 +1,7 @@
 //require dependencies
 const router=require("express").Router();
 const fs=require("fs");
+const uuid=require("./../helpers/uuid")
 
 //Route for pulling/viewing existing notes
 router.get("/notes",(req,res)=>{
@@ -10,5 +11,9 @@ router.get("/notes",(req,res)=>{
 
 //Route for saving/posting new notes
 router.post("/notes",(req,res)=>{
-    
+
 })
+
+
+
+module.exports=router;
