@@ -11,9 +11,14 @@ router.get("/notes",(req,res)=>{
 
 //Route for saving/posting new notes
 router.post("/notes",(req,res)=>{
+let newt=req.body;
+newt.id=uuid();
 
-})
+let noted=JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+noted.push(newt);
 
-
-
+//write new notes to db
+fs.writeFileSync("./db/db.json", JSON.stringify(noted));
+return res.json(noted);
+});
 module.exports=router;
