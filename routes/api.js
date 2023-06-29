@@ -1,11 +1,11 @@
 //require dependencies
 const router=require("express").Router();
 const fs=require("fs");
-const uuid=require("./../helpers/uuid")
+const uuid=require("./../helpers/uuid");
 
 //Route for pulling/viewing existing notes
-router.get("/notes",(req,res)=>{
-    let noted=JSON.parse(fs.readFileSync("./db/db.json","utf8"));
+router.get("/notes", (req, res) => {
+    let noted=JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
     return res.json(noted);
 });
 
@@ -21,4 +21,5 @@ noted.push(newt);
 fs.writeFileSync("./db/db.json", JSON.stringify(noted));
 return res.json(noted);
 });
+
 module.exports=router;
