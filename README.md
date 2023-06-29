@@ -18,7 +18,7 @@ To begin, clone the repository and install the necessary packages (Express.js,fs
 ## Usage
 Once the installation is complete, launch the application with "npm start" and navigate to localhost:3001 to begin writing and saving your notes.
 
-Screenshot of live project: [![NoteTaker](././public/assets/Note%20Taker.png)]
+Screenshot of live project: ![NoteTaker](././public/assets/Note%20Taker.png)
 
 Link to deployed project: https://note-taker-brendan-8b52162d9a26.herokuapp.com/
 
