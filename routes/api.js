@@ -22,4 +22,11 @@ fs.writeFileSync("./db/db.json", JSON.stringify(noted));
 return res.json(noted);
 });
 
+//router.delete("/notes:id",(req,res)=>{
+//    let newt=req.params.id;
+//    let noted=JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+//    let target=noted.filter((file)=>file.id ===target);
+//    fs.writeFileSync("./db/db.json", JSON.stringify(newt));
+//});
+
 module.exports=router;
